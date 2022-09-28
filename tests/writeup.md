@@ -1,11 +1,11 @@
 # BUGS
 
 * **crash1.gft**
-	* **Issue: **
+	* **Issue:**
 		There are two scenarios in this issue.
 		1. The giftcardreader.c program is expecting a file as second arugument, when we pass any other value like '1' or 'a', the program crashes.
 		2. The giftcardreader.c program is expecting exactly two arguments, when we pass third argument to the program then it crashes.
-	* **Fix: **
+	* **Fix:**
 		Below are the fix for each scenarios
 		1. We need validate the second arugument to check whether it is a file. If yes proceed with the flow or throw error to submit correct file.
 		2. We need validate number of acceptable aruguments for the program and throw error if the arugument count doesn't matches.
@@ -15,7 +15,7 @@
 		Sending negative value to the num_bytes crashed the program.
 	* **Reason for the issue:**
 		On checking the giftcardreader.c program, we could see while reading the gift card file 'ptr' is set to NULL pointer as we are passing negative value to num_bytes [ptr = malloc(ret_val->num_bytes); line 189]. When we try to read 'ptr' in the next line, we are receving segmentation error (crash).
-	*Fix:
+	* **Fix:**
 		We need to validate the value of num_bytes to check whether it contains positive value.
 
 * **hang.gft**
