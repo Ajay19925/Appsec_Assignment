@@ -87,7 +87,6 @@ test8: giftcardreader
 	./giftcardreader 1 fuzz/queue/id_000057,src_000050+000054,time_97066,execs_28517,op_splice,rep_4
 	./giftcardreader 1 fuzz/queue/id_000058,src_000021+000048,time_112677,execs_34160,op_splice,rep_8
 	./giftcardreader 1 fuzz/queue/id_000059,src_000048+000005,time_134005,execs_41868,op_splice,rep_16
-	./giftcardreader 1 fuzz/queue/id_000060,src_000017+000056,time_136023,execs_42624,op_splice,rep_16
 	./giftcardreader 1 fuzz/queue/id_000061,src_000057,time_138819,execs_43715,op_havoc,rep_2
 	./giftcardreader 1 fuzz/queue/id_000062,src_000057,time_138948,execs_43757,op_havoc,rep_8
 	./giftcardreader 1 fuzz/queue/id_000063,src_000057+000060,time_142650,execs_45107,op_splice,rep_4
