@@ -15,4 +15,5 @@ jobs:
       - name: Navigate to repository
         run: |
           cd ${{ github.workspace }}
+          make
       - run: echo "🍏 This job's status is ${{ job.status }}."
