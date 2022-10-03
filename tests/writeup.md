@@ -1,4 +1,4 @@
-# BUGS
+# bugs
 
 * **crash1.gft**
 	* **Issue:**
