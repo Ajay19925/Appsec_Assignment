@@ -12,8 +12,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: Navigate to repository
+      - name: Navigate to repository and execute build
         run: |
           cd ${{ github.workspace }}
+          gcc -g -o giftcardreader giftcardreader.c
           make
       - run: echo "🍏 This job's status is ${{ job.status }}."
