@@ -8,7 +8,6 @@ test0: giftcardreader
 test1: giftcardreader
 	./giftcardreader 1 tests/crash1.gft
 	./giftcardreader 1 1
-	./giftcardreader 1 tests/crash1.gft 3
 
 test2: giftcardreader
 	./giftcardreader 1 tests/crash2.gft
