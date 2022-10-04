@@ -274,12 +274,12 @@ int main(int argc, char **argv) {
         if (argc != 3) {
         printf("Invalid Input : Usage: %s <1|2> file.gft\n", argv[0]);
         printf("Please Use 1 for text output (or) 2 for JSON output\n");
-        return 1;
+        return 0;
     	}
 	FILE *input_fd = fopen(argv[2],"r");
     	if (!input_fd) {
         printf("Error Opening Gift card file\n");
-        return 1;
+        return 0;
     	}
 	thisone = gift_card_reader(input_fd);
 	if (argv[1][0] == '1') print_gift_card_info(thisone);
