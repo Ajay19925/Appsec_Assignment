@@ -24,10 +24,10 @@ test6: giftcardreader
 	./giftcardreader 2 fuzz/cov1.gft
 
 test7: giftcardreader
-	./giftcardreader 2 fuzz/fuzz2.gft
+	./giftcardreader 2 fuzz/fuzzer1.gft
 
 test8: giftcardreader
-	./giftcardreader 2 fuzz/fuzz1.gft
+	./giftcardreader 2 fuzz/fuzzer2.gft
 	
 test9: giftcardreader
 	./giftcardreader 1 fuzz/queue/id_000000,time_0,execs_0,orig_hang.gft
