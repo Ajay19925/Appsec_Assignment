@@ -1,6 +1,6 @@
 all: giftcardreader test
 
-test: test0 test1 test2 test3 test4 test5 test6 test7 test8
+test: test0 test1 test2 test3 test4 test5 test6 test7 test8 test9
 
 test0: giftcardreader
 	./giftcardreader 1 examplefile.gft
@@ -25,8 +25,11 @@ test6: giftcardreader
 
 test7: giftcardreader
 	./giftcardreader 2 fuzz/fuzz2.gft
-	
+
 test8: giftcardreader
+	./giftcardreader 2 fuzz/fuzz1.gft
+	
+test9: giftcardreader
 	./giftcardreader 1 fuzz/queue/id_000000,time_0,execs_0,orig_hang.gft
 	./giftcardreader 1 fuzz/queue/id_000001,time_0,execs_0,orig_examplefile.gft
 	./giftcardreader 1 fuzz/queue/id_000002,time_0,execs_0,orig_crash2.gft
